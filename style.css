@@ -2,4 +2,130 @@ body {
   background-color: black;
   color: white;
   font-family: "Roboto Mono", monospace;
+  margin: 20px;
+  overflow-y: scroll;
+}
+
+/* PAGE1 */
+
+#header {
+  margin-top: -20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#container1,
+#container3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  column-gap: 300px;
+}
+
+#name {
+  font-size: 140px;
+  font-weight: bold;
+}
+
+#mainDescription {
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+#betaContainer {
+  margin-top: 150px;
+}
+
+#betaText {
+  font-size: 25px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  line-height: 0.1em;
+}
+
+#betaText span {
+  background: black;
+  padding: 0px 20px;
+}
+
+#email,
+#submit {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 10px;
+}
+
+#email {
+  border: 2px solid white;
+  background: none;
+  color: rgb(150, 150, 150);
+}
+
+#submit {
+  border: 2px solid white;
+}
+
+#submit:hover {
+  background: none;
+  color: rgb(150, 150, 150);
+  transition: all 0.5s;
+}
+
+/* PAGE2 */
+
+#container2 {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  column-gap: 150px;
+  text-align: center;
+}
+
+#badges,
+#suits,
+#eternal {
+  width: 300px;
+}
+
+#title {
+  font-size: 40px;
+}
+
+#description {
+  margin-bottom: 30px;
+}
+
+#container3 {
+  margin: 100px auto;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin: 200px -20px -200px -20px;
+  background-color: rgb(90, 90, 90);
+  padding: 80px;
+}
+
+#site,
+#socials {
+  position: absolute;
+  font-size: 25px;
+}
+
+#site {
+  left: 30px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700px;
+}
+
+#socials {
+  right: 30px;
 }
