@@ -4,23 +4,35 @@ body {
   font-family: "Roboto Mono", monospace;
   margin: 20px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* PAGE1 */
 
 #header {
-  margin-top: -20px;
-  overflow: hidden;
+  overflow: visible;
   white-space: nowrap;
+  animation: rightLeft 80s linear infinite;
+  position: relative;
+}
+@keyframes rightLeft {
+  0% {
+    right: 0%;
+  }
+  50% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
 }
 
 #container1,
 #container3 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  margin-top: 40px;
-  column-gap: 300px;
+  margin-top: 50px;
 }
 
 #name {
@@ -66,10 +78,12 @@ body {
   border: 2px solid white;
   background: none;
   color: rgb(150, 150, 150);
+  cursor: text;
 }
 
 #submit {
   border: 2px solid white;
+  cursor: pointer;
 }
 
 #submit:hover {
@@ -83,8 +97,7 @@ body {
 #container2 {
   margin-top: 150px;
   display: flex;
-  justify-content: center;
-  column-gap: 150px;
+  justify-content: space-around;
   text-align: center;
 }
 
@@ -108,24 +121,50 @@ body {
 
 #footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 200px -20px -200px -20px;
-  background-color: rgb(90, 90, 90);
-  padding: 80px;
-}
-
-#site,
-#socials {
-  position: absolute;
-  font-size: 25px;
+  background-color: rgb(75, 75, 75);
+  padding: 30px;
 }
 
 #site {
-  left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#site a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
   font-family: "Syncopate", sans-serif;
-  font-weight: 700px;
+  font-weight: bold;
+  filter: opacity(0.8);
+}
+
+#site a:hover {
+  filter: opacity(1);
 }
 
 #socials {
-  right: 30px;
+  display: flex;
+  justify-content: space-around;
 }
+
+#linkedin,
+#mail {
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  filter: opacity(0.8);
+}
+
+#linkedin:hover,
+#mail:hover {
+  filter: opacity(1);
+}
+
+#mail {
+  padding-top: 3px;
+}
+
+/* KEYFRAMES */
