@@ -18,8 +18,27 @@ body {
   margin-top: 40px;
 }
 #scroll img {
-  width: 30px;
+  width: 40px;
   height: 30px;
+  padding: 8px;
+  animation: scrollUpDown 2s linear infinite;
+  filter: opacity(0.4);
+}
+
+#scroll img:hover {
+  filter: opacity(1);
+}
+
+@keyframes scrollUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* PAGE1 */
@@ -148,7 +167,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 200px -20px -200px -20px;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(60, 60, 60);
   padding: 30px;
 }
 
@@ -163,7 +182,7 @@ body {
   font-size: 25px;
   font-family: "Syncopate", sans-serif;
   font-weight: bold;
-  filter: opacity(0.8);
+  filter: opacity(0.6);
 }
 
 #site a:hover {
@@ -180,7 +199,7 @@ body {
   margin: 20px;
   width: 30px;
   height: 30px;
-  filter: opacity(0.8);
+  filter: opacity(0.6);
 }
 
 #linkedin:hover,
@@ -193,3 +212,15 @@ body {
 }
 
 /* KEYFRAMES */
+
+/* @keyframes scrollRipple {
+  from {
+    opacity: 0.5;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
+} */
