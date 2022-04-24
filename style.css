@@ -23,6 +23,7 @@ body {
   padding: 8px;
   animation: scrollUpDown 2s linear infinite;
   filter: opacity(0.4);
+  transition: filter 0.5s;
 }
 
 #scroll img:hover {
@@ -46,18 +47,18 @@ body {
 #header {
   overflow: visible;
   white-space: nowrap;
-  animation: rightLeft 100s linear infinite;
+  /* animation: rightLeft 100s linear infinite; */
   position: relative;
 }
 @keyframes rightLeft {
   0% {
-    right: 0%;
+    transform: translateX(0%);
   }
   50% {
-    right: 100%;
+    transform: translateX(-100%);
   }
   100% {
-    right: 0%;
+    transform: translateX(0%);
   }
 }
 
@@ -72,6 +73,11 @@ body {
 #name {
   font-size: 140px;
   font-weight: bold;
+  transition: text-shadow 0.5s;
+}
+
+#name:hover {
+  text-shadow: 0 0 10px rgb(63, 223, 255);
 }
 
 #mainDescription {
@@ -158,6 +164,9 @@ body {
 #image img {
   margin-top: -20px;
   height: 480px;
+}
+
+#image img:hover {
 }
 #container3 {
   margin: 100px auto;
