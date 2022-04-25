@@ -30,9 +30,6 @@ body {
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  -moz-animation: scroll-left 2s linear infinite;
-  -webkit-animation: scroll-left 2s linear infinite;
-  animation: scroll-left 20s linear infinite;
 }
 
 @-moz-keyframes scroll-left {
@@ -183,6 +180,7 @@ body {
   }
   body {
     margin: 20px auto;
+    overflow-x: hidden;
   }
   /* PAGE1 */
 
@@ -190,6 +188,9 @@ body {
     font-size: 1.5em;
     position: absolute;
     max-width: 400px;
+    -moz-animation: scroll-left 2s linear infinite;
+    -webkit-animation: scroll-left 2s linear infinite;
+    animation: scroll-left 8s linear infinite;
   }
 
   #container1,
@@ -301,11 +302,15 @@ body {
   }
   body {
     margin: 20px;
+    overflow-x: hidden;
   }
   /* PAGE1 */
 
   #header h2 {
     position: absolute;
+    -moz-animation: scroll-left 2s linear infinite;
+    -webkit-animation: scroll-left 2s linear infinite;
+    animation: scroll-left 20s linear infinite;
   }
 
   #container1,
