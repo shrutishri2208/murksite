@@ -3,6 +3,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* MOBILES */
@@ -11,7 +12,7 @@ html {
     height: 0.2px;
     color: white;
     background-color: white;
-    width: 60%;
+    width: 90%;
   }
   body {
     background-color: black;
@@ -34,6 +35,7 @@ html {
   #header h2 {
     font-size: 1.5em;
     position: absolute;
+    max-width: 400px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -44,7 +46,7 @@ html {
     transform: translateX(100%);
     -moz-animation: scroll-left 2s linear infinite;
     -webkit-animation: scroll-left 2s linear infinite;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 15s linear infinite;
   }
 
   @-moz-keyframes scroll-left {
@@ -86,10 +88,10 @@ html {
 
   #name {
     margin: auto;
-    font-size: 8em;
+    font-size: 7em;
     font-weight: bold;
     transition: text-shadow 0.5s;
-    color: red;
+    color: green;
   }
 
   #name:hover {
@@ -98,7 +100,7 @@ html {
 
   #mainDescription {
     margin-top: -20px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   #mainImg img {
@@ -117,9 +119,9 @@ html {
   }
 
   #betaText {
-    font-size: 25px;
-    margin-bottom: 40px;
-    width: 100%;
+    font-size: 20px;
+    margin: 40px auto;
+    width: 90%;
     text-align: center;
     border-bottom: 2px solid rgb(255, 255, 255);
     line-height: 0.1em;
@@ -132,13 +134,13 @@ html {
 
   #email,
   #submit {
-    width: 100%;
+    width: 90%;
     display: block;
     padding: 10px;
     font-size: 25px;
     border-radius: 10px;
     font-family: "Roboto Mono", monospace;
-    margin-bottom: 10px;
+    margin: 10px auto;
   }
 
   #email {
