@@ -91,7 +91,7 @@ html {
     font-size: 7em;
     font-weight: bold;
     transition: text-shadow 0.5s;
-    color: green;
+    color: rgb(255, 251, 0);
   }
 
   #name:hover {
@@ -100,7 +100,7 @@ html {
 
   #mainDescription {
     margin-top: -20px;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   #mainImg img {
@@ -218,7 +218,7 @@ html {
 
   #description {
     margin: 0px auto 40px auto;
-    font-size: 90%;
+    font-size: 0.9em;
   }
 
   #image img {
