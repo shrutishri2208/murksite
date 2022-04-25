@@ -89,6 +89,7 @@ html {
     font-size: 8em;
     font-weight: bold;
     transition: text-shadow 0.5s;
+    color: red;
   }
 
   #name:hover {
