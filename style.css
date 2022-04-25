@@ -157,12 +157,13 @@ body {
 #submit {
   border: 2px solid white;
   cursor: pointer;
+  transition: border 0.5s, background-color 0.5s;
 }
 
 #submit:hover {
-  background: none;
-  color: rgb(150, 150, 150);
-  transition: all 0.5s;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  color: black;
 }
 
 #scroll a {
