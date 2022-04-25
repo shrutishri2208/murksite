@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  margin: auto;
   background-color: black;
   color: white;
   font-family: "Roboto Mono", monospace;
@@ -14,6 +15,7 @@ body {
 }
 
 #header {
+  width: 100%;
   height: 40px;
   overflow: hidden;
   position: relative;
@@ -64,6 +66,7 @@ body {
 }
 
 #name {
+  color: red;
   font-weight: bold;
   transition: text-shadow 0.5s;
 }
@@ -172,14 +175,14 @@ body {
 }
 
 /* MOBILES */
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 1000px) {
   hr {
     color: white;
     background-color: white;
     width: 80%;
   }
   body {
-    margin: 20px auto;
+    margin: auto;
     overflow-x: hidden;
   }
   /* PAGE1 */
@@ -296,7 +299,7 @@ body {
 }
 
 /* LAPTOPS */
-@media screen and (min-width: 625px) {
+@media screen and (min-width: 1000px) {
   hr {
     display: none;
   }
