@@ -5,6 +5,175 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#header {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  background: var(--blue);
+  color: black;
+}
+
+#header h2 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 2s linear infinite;
+  animation: scroll-left 20s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+#name {
+  font-weight: bold;
+  transition: text-shadow 0.5s;
+}
+
+#name:hover {
+  text-shadow: 0 0 15px var(--blue);
+}
+
+#betaText {
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  line-height: 0.1em;
+}
+
+#email,
+#submit {
+  display: block;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#email {
+  border: 2px solid white;
+  background: none;
+  color: rgb(150, 150, 150);
+  cursor: text;
+}
+
+#submit {
+  border: 2px solid white;
+  cursor: pointer;
+  transition: border 0.5s, background-color 0.5s;
+}
+
+#submit:hover {
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  color: black;
+}
+
+#scroll a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#scroll img {
+  width: 40px;
+  height: 30px;
+  padding: 8px;
+  animation: scrollUpDown 2s linear infinite;
+  filter: opacity(0.4);
+  transition: filter 0.5s;
+}
+
+#scroll img:hover {
+  filter: opacity(1);
+}
+
+@keyframes scrollUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#container3 {
+  margin: 100px auto;
+}
+
+#footer {
+  margin: 200px -20px -200px -20px;
+  background-color: rgb(60, 60, 60);
+  padding: 30px;
+}
+
+#site a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: bold;
+  filter: opacity(0.6);
+}
+
+#site a:hover {
+  filter: opacity(1);
+}
+
+#linkedin:hover,
+#mail:hover {
+  filter: opacity(1);
+}
+
+#mail {
+  padding-top: 3px;
+}
+
 /* MOBILES */
 @media screen and (max-width: 625px) {
   hr {
@@ -13,69 +182,14 @@ html {
     width: 80%;
   }
   body {
-    background-color: black;
-    color: white;
-    font-family: "Roboto Mono", monospace;
     margin: 20px auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
   /* PAGE1 */
-
-  #header {
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    background: var(--blue);
-    color: black;
-  }
 
   #header h2 {
     font-size: 1.5em;
     position: absolute;
     max-width: 400px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    line-height: 40px;
-    text-align: center;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 2s linear infinite;
-    -webkit-animation: scroll-left 2s linear infinite;
-    animation: scroll-left 15s linear infinite;
-  }
-
-  @-moz-keyframes scroll-left {
-    0% {
-      -moz-transform: translateX(100%);
-    }
-    100% {
-      -moz-transform: translateX(-100%);
-    }
-  }
-
-  @-webkit-keyframes scroll-left {
-    0% {
-      -webkit-transform: translateX(100%);
-    }
-    100% {
-      -webkit-transform: translateX(-100%);
-    }
-  }
-
-  @keyframes scroll-left {
-    0% {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    100% {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
   }
 
   #container1,
@@ -87,13 +201,6 @@ html {
   #name {
     margin: auto;
     font-size: 7em;
-    font-weight: bold;
-    transition: text-shadow 0.5s;
-    color: white;
-  }
-
-  #name:hover {
-    text-shadow: 0 0 15px var(--blue);
   }
 
   #mainDescription {
@@ -120,9 +227,6 @@ html {
     font-size: 20px;
     margin: 40px auto;
     width: 90%;
-    text-align: center;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    line-height: 0.1em;
   }
 
   #betaText span {
@@ -133,65 +237,12 @@ html {
   #email,
   #submit {
     width: 90%;
-    display: block;
-    padding: 10px;
-    font-size: 25px;
-    border-radius: 10px;
-    font-family: "Roboto Mono", monospace;
+
     margin: 10px auto;
   }
 
-  #email {
-    border: 2px solid white;
-    background: none;
-    color: rgb(150, 150, 150);
-    cursor: text;
-  }
-
-  #submit {
-    border: 2px solid white;
-    cursor: pointer;
-    transition: border 0.5s, background-color 0.5s;
-  }
-
-  #submit:hover {
-    background-color: var(--blue);
-    border: 2px solid var(--blue);
-    color: black;
-  }
-
-  #scroll a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
   #scroll img {
     display: none;
-
-    width: 40px;
-    height: 30px;
-    padding: 8px;
-    animation: scrollUpDown 2s linear infinite;
-    filter: opacity(0.4);
-    transition: filter 0.5s;
-  }
-
-  #scroll img:hover {
-    filter: opacity(1);
-  }
-
-  @keyframes scrollUpDown {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(8px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
   }
 
   /* PAGE2 */
@@ -224,32 +275,9 @@ html {
     height: 400px;
   }
 
-  #container3 {
-    margin: 100px auto;
-  }
-
-  #footer {
-    margin: 200px -20px -200px -20px;
-    background-color: rgb(60, 60, 60);
-    padding: 30px;
-  }
-
   #site {
     margin: 10px auto;
     text-align: center;
-  }
-
-  #site a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    font-family: "Syncopate", sans-serif;
-    font-weight: bold;
-    filter: opacity(0.6);
-  }
-
-  #site a:hover {
-    filter: opacity(1);
   }
 
   #socials {
@@ -264,15 +292,6 @@ html {
     filter: opacity(0.6);
     margin: 20px 20px 0px 20px;
   }
-
-  #linkedin:hover,
-  #mail:hover {
-    filter: opacity(1);
-  }
-
-  #mail {
-    padding-top: 3px;
-  }
 }
 
 /* LAPTOPS */
@@ -281,67 +300,12 @@ html {
     display: none;
   }
   body {
-    background-color: black;
-    color: white;
-    font-family: "Roboto Mono", monospace;
     margin: 20px;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
   /* PAGE1 */
 
-  #header {
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    background: var(--blue);
-    color: black;
-  }
-
   #header h2 {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 40px;
-    text-align: center;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 2s linear infinite;
-    -webkit-animation: scroll-left 2s linear infinite;
-    animation: scroll-left 20s linear infinite;
-  }
-
-  @-moz-keyframes scroll-left {
-    0% {
-      -moz-transform: translateX(100%);
-    }
-    100% {
-      -moz-transform: translateX(-100%);
-    }
-  }
-
-  @-webkit-keyframes scroll-left {
-    0% {
-      -webkit-transform: translateX(100%);
-    }
-    100% {
-      -webkit-transform: translateX(-100%);
-    }
-  }
-
-  @keyframes scroll-left {
-    0% {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    100% {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
   }
 
   #container1,
@@ -354,12 +318,6 @@ html {
 
   #name {
     font-size: 140px;
-    font-weight: bold;
-    transition: text-shadow 0.5s;
-  }
-
-  #name:hover {
-    text-shadow: 0 0 15px var(--blue);
   }
 
   #mainDescription {
@@ -381,9 +339,6 @@ html {
     font-size: 25px;
     margin-bottom: 40px;
     width: 100%;
-    text-align: center;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    line-height: 0.1em;
   }
 
   #betaText span {
@@ -394,63 +349,8 @@ html {
   #email,
   #submit {
     width: 100%;
-    display: block;
-    padding: 10px;
-    font-size: 25px;
-    border-radius: 10px;
-    font-family: "Roboto Mono", monospace;
+
     margin-bottom: 10px;
-  }
-
-  #email {
-    border: 2px solid white;
-    background: none;
-    color: rgb(150, 150, 150);
-    cursor: text;
-  }
-
-  #submit {
-    border: 2px solid white;
-    cursor: pointer;
-    transition: border 0.5s, background-color 0.5s;
-  }
-
-  #submit:hover {
-    background-color: var(--blue);
-    border: 2px solid var(--blue);
-    color: black;
-  }
-
-  #scroll a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  #scroll img {
-    width: 40px;
-    height: 30px;
-    padding: 8px;
-    animation: scrollUpDown 2s linear infinite;
-    filter: opacity(0.4);
-    transition: filter 0.5s;
-  }
-
-  #scroll img:hover {
-    filter: opacity(1);
-  }
-
-  @keyframes scrollUpDown {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(8px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
   }
 
   /* PAGE2 */
@@ -484,34 +384,14 @@ html {
     height: 480px;
   }
 
-  #container3 {
-    margin: 100px auto;
-  }
-
   #footer {
     display: flex;
     justify-content: space-between;
-    margin: 200px -20px -200px -20px;
-    background-color: rgb(60, 60, 60);
-    padding: 30px;
   }
 
   #site {
     margin-top: auto;
     margin-bottom: auto;
-  }
-
-  #site a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    font-family: "Syncopate", sans-serif;
-    font-weight: bold;
-    filter: opacity(0.6);
-  }
-
-  #site a:hover {
-    filter: opacity(1);
   }
 
   #socials {
@@ -525,15 +405,6 @@ html {
     width: 30px;
     height: 30px;
     filter: opacity(0.6);
-  }
-
-  #linkedin:hover,
-  #mail:hover {
-    filter: opacity(1);
-  }
-
-  #mail {
-    padding-top: 3px;
   }
 }
 
