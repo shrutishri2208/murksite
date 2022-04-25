@@ -6,7 +6,7 @@ html {
 }
 
 /* MOBILES */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 625px) {
   body {
     width: fit-content;
     background-color: black;
@@ -272,7 +272,7 @@ html {
 }
 
 /* LAPTOPS */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 625px) {
   body {
     background-color: black;
     color: white;
