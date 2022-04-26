@@ -3,7 +3,6 @@
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -66,10 +65,7 @@ body {
 }
 
 #name {
-<<<<<<< HEAD
-  color: white;
-=======
->>>>>>> 774bf71f0dbb65688e42dd0707b20980c97c4774
+  color: yellow;
   font-weight: bold;
   transition: text-shadow 0.5s;
 }
