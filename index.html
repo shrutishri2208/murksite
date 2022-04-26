@@ -13,6 +13,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm1() {
+      $.ajax({
+        url: 'https://api.apispreadsheets.com/data/QM07OY5HcwYyCLdR/',
+        type: 'post',
+        data: $("#betaForm1").serializeArray(),
+        success: function () {
+          alert("Data recorded :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+      var emailField1 = document.getElementById('email1');
+      emailField1.value = "";
+      return false;
+    }
+    function SubForm2() {
+      $.ajax({
+        url: 'https://api.apispreadsheets.com/data/QM07OY5HcwYyCLdR/',
+        type: 'post',
+        data: $("#betaForm2").serializeArray(),
+        success: function () {
+          alert("Data recorded :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+      var emailField2 = document.getElementById('email2');
+      emailField2.value = "";
+      return false;
+    }
+  </script>
 </head>
 
 <body>
@@ -27,7 +63,7 @@
       <div id="mainDescription">
         single-touch, single-player, endless game
       </div>
-      <div id="betaContainer1">
+      <!-- <div id="betaContainer1">
         <div id="betaText">
           <span>join the beta list </span>
         </div>
@@ -39,9 +75,20 @@
             submit
           </button>
         </div>
+      </div> -->
 
+      <div id="betaContainer1">
+        <div id="betaText">
+          <span>join the beta list </span>
+        </div>
+        <form id="betaForm1">
+          <input name="email" id="email1" />
+        </form>
+        <button onclick="SubForm1()" id="submit">submit</button>
       </div>
     </div>
+
+
     <div id="mainImg">
       <img src="./main 2.png" />
     </div>
@@ -112,7 +159,7 @@
       <div id="mainDescription" style="color: transparent;">
         single-touch, single-player, endless game
       </div>
-      <div id="betaContainer2">
+      <!-- <div id="betaContainer2">
         <div id="betaText">
           <span>join the beta list </span>
         </div>
@@ -124,7 +171,15 @@
             submit
           </button>
         </div>
-
+      </div> -->
+      <div id="betaContainer2">
+        <div id="betaText">
+          <span>join the beta list </span>
+        </div>
+        <form id="betaForm2">
+          <input name="email" id="email2" />
+        </form>
+        <button onclick="SubForm2()" id="submit">submit</button>
       </div>
     </div>
 
