@@ -84,6 +84,7 @@ body {
 #email1,
 #email2,
 #submit {
+  text-align: center;
   display: block;
   padding: 10px;
   font-size: 25px;
@@ -237,7 +238,6 @@ body {
 
   #betaForm1 input,
   #betaform2 input {
-    max-width: 84%;
   }
 
   #betaText span {
@@ -250,6 +250,10 @@ body {
   #submit {
     width: 90%;
     margin: 10px auto;
+  }
+
+  #email2 {
+    width: 84%;
   }
 
   #scroll img {
