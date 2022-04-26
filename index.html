@@ -15,40 +15,6 @@
   <link rel="stylesheet" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-  <script>
-    function SubForm1() {
-      $.ajax({
-        url: 'https://api.apispreadsheets.com/data/QM07OY5HcwYyCLdR/',
-        type: 'post',
-        data: $("#betaForm1").serializeArray(),
-        success: function () {
-          alert("Data recorded :)")
-        },
-        error: function () {
-          alert("There was an error :(")
-        }
-      });
-      var emailField1 = document.getElementById('email1');
-      emailField1.value = "";
-      return false;
-    }
-    function SubForm2() {
-      $.ajax({
-        url: 'https://api.apispreadsheets.com/data/QM07OY5HcwYyCLdR/',
-        type: 'post',
-        data: $("#betaForm2").serializeArray(),
-        success: function () {
-          alert("Data recorded :)")
-        },
-        error: function () {
-          alert("There was an error :(")
-        }
-      });
-      var emailField2 = document.getElementById('email2');
-      emailField2.value = "";
-      return false;
-    }
-  </script>
 </head>
 
 <body>
@@ -205,6 +171,8 @@
 
   </div>
 </body>
+<script type="text/javascript" src="./index.js"></script>
+
 
 </html>
 
