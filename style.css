@@ -34,6 +34,10 @@ body {
   transform: translateX(100%);
 }
 
+#header h2:hover {
+  animation-play-state: paused;
+}
+
 @-moz-keyframes scroll-left {
   0% {
     -moz-transform: translateX(100%);
@@ -72,6 +76,31 @@ body {
 
 #name:hover {
   text-shadow: 0 0 15px var(--blue);
+}
+
+#first,
+#second,
+#third {
+  animation: fadeIn linear 0.3s forwards;
+  opacity: 0;
+}
+#first {
+  animation-delay: 0.5s;
+}
+#second {
+  animation-delay: 1s;
+}
+#third {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #betaText {
