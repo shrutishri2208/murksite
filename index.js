@@ -43,3 +43,10 @@ function SubForm2() {
   emailField2.value = "";
   return false;
 }
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 100) {
+    $("#logo").addClass("blackLogo");
+  } else {
+    $("#logo").removeClass("blackLogo");
+  }
+});
