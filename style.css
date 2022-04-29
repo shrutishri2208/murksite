@@ -18,7 +18,7 @@ body {
   font-family: "Syncopate", sans-serif;
   font-weight: 700;
   line-height: 10px;
-  transition: color 0.5s, background 0.5s;
+  transition: all 0.3s;
 }
 
 .blackLogo {
@@ -158,7 +158,7 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #scroll img {
@@ -449,7 +449,7 @@ body {
   /* PAGE2 */
 
   #container2 {
-    padding-top: 50px;
+    padding-top: 80px;
     margin-top: 100px;
     display: flex;
     justify-content: space-around;

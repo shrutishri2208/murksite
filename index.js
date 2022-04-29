@@ -44,9 +44,11 @@ function SubForm2() {
   return false;
 }
 $(window).on("scroll", function () {
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 120) {
     $("#logo").addClass("blackLogo");
+    $("#logo h1").text("s•z");
   } else {
     $("#logo").removeClass("blackLogo");
+    $("#logo h1").text("• shrutz •");
   }
 });
