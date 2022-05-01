@@ -244,7 +244,7 @@ body {
   #header h2 {
     font-size: 1.4em;
     position: absolute;
-    max-width: 400px;
+    max-width: 300px;
     -moz-animation: scroll-left 2s linear infinite;
     -webkit-animation: scroll-left 2s linear infinite;
     animation: scroll-left 8s linear infinite;
