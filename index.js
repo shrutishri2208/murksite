@@ -46,9 +46,12 @@ function SubForm2() {
 $(window).on("scroll", function () {
   if ($(this).scrollTop() > 50) {
     $("#logo").addClass("blackLogo");
+    $("#logo a").addClass("blackLogoText");
     $("#logo h1").text("• sz •");
   } else {
     $("#logo").removeClass("blackLogo");
+    $("#logo a").removeClass("blackLogoText");
+
     $("#logo h1").text("• shrutz •");
   }
 });
