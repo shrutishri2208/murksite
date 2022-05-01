@@ -16,7 +16,6 @@ body {
 #logo {
   position: fixed;
   font-family: "Syncopate", sans-serif;
-  font-weight: 700;
   line-height: 10px;
   transition: all 0.3s;
 }
@@ -243,7 +242,7 @@ body {
   }
 
   #header h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     position: absolute;
     max-width: 400px;
     -moz-animation: scroll-left 2s linear infinite;

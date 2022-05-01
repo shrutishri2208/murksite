@@ -44,9 +44,9 @@ function SubForm2() {
   return false;
 }
 $(window).on("scroll", function () {
-  if ($(this).scrollTop() > 120) {
+  if ($(this).scrollTop() > 50) {
     $("#logo").addClass("blackLogo");
-    $("#logo h1").text("s•z");
+    $("#logo h1").text("• sz •");
   } else {
     $("#logo").removeClass("blackLogo");
     $("#logo h1").text("• shrutz •");
