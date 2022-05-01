@@ -361,9 +361,6 @@ body {
   hr {
     display: none;
   }
-  body {
-    margin: 20px;
-  }
 
   #logo {
     font-size: 13px;
@@ -482,11 +479,11 @@ body {
   }
 
   #site {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 20px;
   }
 
   #socials {
+    margin-right: 20px;
     display: flex;
     justify-content: space-around;
   }
