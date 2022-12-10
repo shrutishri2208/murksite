@@ -255,6 +255,15 @@ body {
     text-align: center;
     margin-top: 40px;
   }
+  #mainText {
+    margin: auto 0px;
+  }
+  #about {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 80%;
+    text-align: justify;
+  }
 
   #name {
     margin: auto;
