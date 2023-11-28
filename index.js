@@ -56,3 +56,5 @@ $(window).on("scroll", function () {
     $("#logo h1").text(" • shrutz • ");
   }
 });
+
+// THIS IS BRANCH 2 CHANGES
