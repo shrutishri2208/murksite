@@ -58,3 +58,4 @@ $(window).on("scroll", function () {
 });
 
 // THIS IS BRANCH 2 CHANGES
+// THIS IS BRANCH 1 CHANGES
